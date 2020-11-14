@@ -8,14 +8,11 @@ from operator import itemgetter;
 def parse(xml_string):
     # list of dictionaries to return
     entries = [];
-
     root = ET.fromstring(xml_string);
-
     for child in root.iter('author'):
         tmp_dict = {};
         tmp_dict[child.tag] = child.text;
         entries.append(tmp_dict);
-    
     return entries;
         
 # main func
