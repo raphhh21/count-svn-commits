@@ -1,7 +1,6 @@
 import os
 import sys
 import csv
-import requests
 import xml.etree.ElementTree as ET
 from operator import itemgetter
 
