@@ -51,6 +51,6 @@ if __name__ == "__main__":
 
     except ET.ParseError:
         print("Could not parse svn log, please check if " +
-              str(sys.argv[1]) + "is a valid svn repo")
+              sys.argv[1] + " is a valid svn repo")
 
-    pipe.close();
+    pipe.close()
