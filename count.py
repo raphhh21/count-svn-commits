@@ -45,9 +45,12 @@ if __name__ == "__main__":
         # add total count
         author_count["TOTAL"] = total_count
         # print
+        print("SVN_DIR: " + sys.argv[1] + "\n")
         for author, count in author_count.items():
             print(f'{author:<22} {count}')
 
     except ET.ParseError:
         print("Could not parse svn log, please check if " +
               str(sys.argv[1]) + "is a valid svn repo")
+
+    pipe.close();
