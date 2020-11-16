@@ -9,6 +9,7 @@ Simple python script to count how many commits each author has inside a svn repo
 ## Sample Output
 
 ```shell
+$ python3 count.py projects/count-svn-commits
 SVN_DIR: projects/count-svn-commits
 
 author1   2
